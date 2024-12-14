@@ -17,6 +17,7 @@ export function GameCardsList({games, activeIndex = 0, onActiveIndexChange} : Ga
         games.map((game, index) => {
 
             const card =  (<div key = {game.name}
+                    onClick={() => onActiveIndexChange?.(index)}
                     style={{['transform']: `translateX(${offsetX}px) translateY(${CARDS_OFFEST_Y}px)`}}
                     className={`game-card ${index == activeIndex ? 'active' : ''} `}>
                 <img src={game.logo}/>

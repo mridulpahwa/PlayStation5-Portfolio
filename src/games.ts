@@ -3,9 +3,9 @@ import {Game} from "../src/types/games.ts";
 export const games: Game[] = [
     {
         key:1,
-        logo: '../public/game/fortnite.jpeg',
+        logo: '../public/game/gowTitle.avif',
         name: 'Fortnite',
-        bg: '../public/game/fortnite_bg.jpeg'
+        bg: '../public/game/gowbg.jpg'
     },
     {
         key:2,
@@ -29,7 +29,7 @@ export const games: Game[] = [
         key:5,
         logo: '../public/game/witcher3.jpeg',
         name: 'Spider-man',
-        bg: '../public/game/witcher3/bg.webp'
+        bg: '../public/game/witcher3_bg.webp'
     },
     {
         key:6,
