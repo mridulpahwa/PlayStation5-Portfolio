@@ -1,6 +1,6 @@
-export const CARD_SIZE = 120;
+export const CARD_SIZE = 100;
 
-export const ACTIVE_CARD_SIZE = 200;
+export const ACTIVE_CARD_SIZE = 150;
 
 export const CARD_GAP = 10;
 
