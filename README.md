@@ -13,6 +13,17 @@ A blinking PS button effect for an authentic touch.
 - Three.js: For rendering and managing 3D objects, materials, lights, and animations.
 OrbitControls: For smooth user interactions with the 3D models.
 Font Awesome: For PlayStation-styled fonts and icons.
+GLTFLoader: To load and display high-quality .gltf and .glb models.
+Custom Textures: Optimized texture images for backgrounds and models.
+
+# Web Development Tools
+- HTML5: For structuring the content of the website.
+CSS3: For styling, animations, and transitions.
+JavaScript (ES6+): For interactivity and integrating Three.js with custom animations.
+
+# Development Tools
+- Blender: For optimizing and centering 3D models before integration.
+GitHub: For version control and project collaboration.
 
 # Dynamic Animations and Effects
 - Blinking Effect: The PS button blinks in sync with an expanding circular light animation.
