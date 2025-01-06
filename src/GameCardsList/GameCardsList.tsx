@@ -1,6 +1,6 @@
 import { ACTIVE_CARD_GAP, ACTIVE_CARD_SIZE, CARD_GAP, CARD_SIZE, CARDS_OFFEST_X , CARDS_OFFEST_Y} from "../constants";
+import { GameCard } from "../GameCard/GameCard";
 import {Game} from "../types/games";
-import './GameCardList.scss'
 
 interface GameCardsListProps{
     games : Game[];
@@ -16,12 +16,15 @@ export function GameCardsList({games, activeIndex = 0, onActiveIndexChange} : Ga
     {
         games.map((game, index) => {
 
-            const card =  (<div key = {game.name}
-                    onClick={() => onActiveIndexChange?.(index)}
-                    style={{['transform']: `translateX(${offsetX}px) translateY(${CARDS_OFFEST_Y}px)`}}
-                    className={`game-card ${index == activeIndex ? 'active' : ''} `}>
-                <img src={game.logo}/>
-            </div>);
+            const card =  (
+                    <GameCard key = {game.name}
+                              {...game}
+                              onClick={() => onActiveIndexChange?.(index)}
+                              style={{['transform']: `translateX(${offsetX}px) translateY(${CARDS_OFFEST_Y}px)`}}
+                              active={activeIndex === index}>
+                        <img src={game.logo}/>
+                    </GameCard>
+            );
 
             if (index === activeIndex - 1){
                 offsetX += CARD_SIZE + ACTIVE_CARD_GAP;
